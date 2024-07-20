@@ -60,4 +60,7 @@ Handle invalid inputs gracefully by providing clear error messages.
 Ensure the program does not crash due to invalid inputs.
 
 ## Installation:
+https://github.com/kiirty/codealpha_tasks/blob/main/CGPA%20Calculator%20%20TASK-2
+## Demo:
+<img width="315" alt="image" src="https://github.com/user-attachments/assets/92c24124-d918-445e-b828-44d255e70f26">
 
