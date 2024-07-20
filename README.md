@@ -24,7 +24,7 @@ The Sudoku grid is initialized with a given puzzle. You can replace the numbers 
 
 
 ## Installation
-1. https://github.com/kiirty/Sudoko-Solver/new/main?filename=README.md
+https://github.com/kiirty/codealpha_tasks/blob/main/Sudoko%20Solver%20TASK-1
 
 ## Demo
 <img width="161" alt="image" src="https://github.com/user-attachments/assets/b1cea953-dec9-4e09-8174-b4c36808d1e4">
