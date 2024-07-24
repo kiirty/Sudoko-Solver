@@ -18,10 +18,10 @@ The Sudoku grid is initialized with a given puzzle. You can replace the numbers 
 - findEmptyPlace finds an empty cell in the grid.
 ## Backtracking Algorithm:
 - solveSudoku uses a recursive approach to try placing numbers from 1 to 9 in empty cells and recursively solve the rest of the grid. If a placement leads to a solution, it returns true; otherwise, it backtracks and tries the next number.
+
 ## Printing the Grid:
 - printGrid prints the Sudoku grid in a readable format.
 - You can compile this code using a C++ compiler (e.g., g++) and run the executable to see the solved Sudoku puzzle. This implementation can handle puzzles of varying difficulty levels as the backtracking algorithm systematically tries all possibilities until it finds a solution.
-
 
 ## Installation
 https://github.com/kiirty/codealpha_tasks/blob/main/Sudoko%20Solver%20TASK-1
@@ -63,4 +63,63 @@ Ensure the program does not crash due to invalid inputs.
 https://github.com/kiirty/codealpha_tasks/blob/main/CGPA%20Calculator%20%20TASK-2
 ## Demo:
 <img width="315" alt="image" src="https://github.com/user-attachments/assets/92c24124-d918-445e-b828-44d255e70f26">
+
+## TASK-3 
+## Overview: 
+This C++ program simulates basic banking operations through functions for account setup, deposits, withdrawals, and displaying account details. It uses input/output operations to interact with users, allowing them to enter account information and transaction amounts. Condition checking ensures withdrawals do not exceed the available balance, and simple data management stores and updates account details. The program features a menu-driven interface, enabling users to select different banking operations. Overall, it demonstrates fundamental programming concepts in C++, such as function definition, data handling, and user interaction, providing a functional model of core banking activities.
+
+## Technology Used:
+1. Programming Language:
+C++: The core language used for writing the banking system, chosen for its performance, object-oriented features, and extensive standard library.
+2. Development Environment:
+Integrated Development Environment (IDE): IDEs like Visual Studio, Code::Blocks, or CLion can be used for writing, debugging, and compiling C++ code.
+Text Editors: Lightweight editors like Sublime Text, Visual Studio Code, or Notepad++ for writing code.
+3. Compiler:
+GNU Compiler Collection (GCC): Commonly used for compiling C++ code on various platforms.
+Microsoft Visual C++ Compiler: Used with Visual Studio on Windows.
+Clang: Another popular C++ compiler, known for its fast compilation and excellent diagnostics.
+4. Libraries:
+Standard Template Library (STL): Provides a collection of algorithms, containers, and iterators, essential for efficient data handling.
+Boost: A set of libraries that enhances C++ functionality, useful for advanced features not covered by the STL.
+
+## Key Features:
+1)  Account Creation and Initial Balance Setup
+
+- Function: 'opbal'
+- Prompts the user to enter the account holder's name, account number, account type, and initial balance.
+Stores this information in the respective member variables.
+2) Deposit Money
+- Function: deposit
+- Prompts the user to enter a deposit amount.
+- Adds the deposit amount to the current balance.
+- Displays the new balance after the deposit.
+3) Withdraw Money
+- Function: withdraw
+- Checks if the withdrawal amount is less than or equal to the current balance.
+- If sufficient funds are available, subtracts the withdrawal amount from the balance.
+- Displays the new balance after the withdrawal.
+- If insufficient funds, displays an error message.
+4) Display Account Details
+- Function: display
+- Displays the account holder's name, account number, account type, and current balance in a formatted manner.
+5)Menu-Driven User Interface
+- Main Function: main
+- Provides a menu for the user to select different operations:
+- Assign Initial Value (create account and set initial balance)
+- Deposit money
+- Withdraw money
+- Display all account details
+- Exit the program
+- Uses a do-while loop to repeatedly show the menu until the user chooses to exit.
+- Switch-case structure to handle user choices and call the corresponding functions.
+- 
+ ## Installation:
+ view-source:https://github.com/kiirty/codealpha_tasks/edit/main/README.md
+
+ ## Demo:
+ ![Screenshot 2024-07-24 083412](https://github.com/user-attachments/assets/41dd4325-27f0-4eca-b17a-b2f070c5bc70)
+![Screenshot 2024-07-24 083430](https://github.com/user-attachments/assets/4e47fb08-11c1-47fe-a62b-e9fae1755792)
+![Screenshot 2024-07-24 083440](https://github.com/user-attachments/assets/bf03bd9f-ac3a-4be9-b5ca-1cc83e130dcc)
+
+
 
