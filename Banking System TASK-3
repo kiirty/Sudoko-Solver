@@ -1,0 +1,103 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+class bank {
+    char name[50];
+    int acno;
+    char actype[20];
+    int bal;
+public:
+    void opbal(void);
+    void deposit(void);
+    void withdraw(void);
+    void display(void);
+};
+
+void bank::opbal(void) {
+    cout << endl << endl;
+    cout << "Enter Name: ";
+    cin.ignore(); // To ignore the leftover newline character from previous input
+    cin.getline(name, 50);
+    cout << "Enter A/c no.: ";
+    cin >> acno;
+    cout << "Enter A/c type: ";
+    cin >> actype;
+    cout << "Enter Opening Balance: ";
+    cin >> bal;
+}
+
+void bank::deposit(void) {
+    int deposit = 0;
+    cout << "Enter Deposit amount: ";
+    cin >> deposit;
+    bal += deposit;
+    cout << "\nDeposit Balance = " << bal;
+}
+
+void bank::withdraw(void) {
+    int withdraw;
+    cout << "\nBalance Amount = " << bal;
+    cout << "\nEnter Withdraw Amount: ";
+    cin >> withdraw;
+    if (bal >= withdraw) {
+        bal -= withdraw;
+        cout << "\nAfter Withdraw Balance is = " << bal;
+    } else {
+        cout << "\nNot Enough Balance";
+    }
+}
+
+void bank::display(void) {
+    cout << endl << endl << endl;
+    cout << setw(20) << "DETAILS" << endl;
+    cout << setw(20) << "Name: " << name << endl;
+    cout << setw(20) << "A/c No.: " << acno << endl;
+    cout << setw(20) << "A/c Type: " << actype << endl;
+    cout << setw(20) << "Balance: " << bal << endl;
+}
+
+int main() {
+    bank ol;
+    int choice;
+
+    do {
+        cout << "\n\n\n\tBanking System Program";
+        cout << "\n\nChoice List\n\n";
+        cout << "1) To Assign Initial Value\n";
+        cout << "2) To Deposit\n";
+        cout << "3) To Withdraw\n";
+        cout << "4) To Display All Details\n";
+        cout << "5) Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                ol.opbal();
+                break;
+
+            case 2:
+                ol.deposit();
+                break;
+
+            case 3:
+                ol.withdraw();
+                break;
+
+            case 4:
+                ol.display();
+                break;
+
+            case 5:
+                goto end;
+
+            default:
+                cout << "\nInvalid Option....";
+        }
+    } while (1);
+
+end:
+    return 0;
+}
+
